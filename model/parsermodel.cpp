@@ -18,3 +18,13 @@ void ParserModel::InitHandler()
 
     other->_Nexthandler = 0;
 }
+
+ParserModel &ParserModel::Instance()
+{
+    static ParserModel *model;
+    if(model==NULL)
+    {
+        model = new ParserModel;
+    }
+    return *model;
+}

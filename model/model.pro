@@ -11,6 +11,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = model
 TEMPLATE = app
 
+CONFIG+=c++11
+
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -29,7 +31,8 @@ SOURCES += main.cpp\
     imodel.cpp \
     otherhandler.cpp \
     parsermodel.cpp \
-    datahandler.cpp
+    datahandler.cpp \
+    ihandlerthread.cpp
 
 HEADERS  += mainwindow.h \
     ihandler.h \
@@ -37,6 +40,7 @@ HEADERS  += mainwindow.h \
     imodel.h \
     otherhandler.h \
     parsermodel.h \
-    datahandler.h
+    datahandler.h \
+    ihandlerthread.h
 
 FORMS    += mainwindow.ui

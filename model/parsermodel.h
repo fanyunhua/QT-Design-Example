@@ -4,10 +4,10 @@
 #include "imodel.h"
 class ParserModel:public IModel
 {
-public:
+private:
     ParserModel();
-
+public:
     void InitHandler();
+    static ParserModel &Instance();
 };
-
 #endif // PARSERMODEL_H

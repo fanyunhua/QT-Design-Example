@@ -20,8 +20,3 @@ void IHandler::setNextHandler(IHandler *handler)
     this->_Nexthandler = handler;
 
 }
-
-//IHandler IHandler::getNextHandler()
-//{
-
-//}

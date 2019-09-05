@@ -7,16 +7,13 @@ int main(int argc, char *argv[])
 
 //    GPSHandler *handler =  new GPSHandler;
 //    handler->process("dsddd");
-//    MainWindow w;
-//    w.show();
+    MainWindow w;
+    w.show();
 
 
-    ParserModel model;
+//    ParserModel model;
 
-    model.handler("GPS");
-    model.handler("Other");
-
-    //    MainWindow w;
-    //    w.show();
+//    model.handler("GPS");
+//    model.handler("Other");
     return a.exec();
 }
